@@ -10,4 +10,14 @@ import UIKit
 
 class RightViewController: UIViewController
 {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showMainViewController")
+        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeGestureRecognizer)
+    }
+
+    func showMainViewController() {
+        self.performSegueWithIdentifier("idRightSegueUnwind", sender: self)
+    }
 }

@@ -20,6 +20,12 @@ class CustomUINavigationController:UINavigationController {
                 })
                 return unwindSegue
             }
+            if id == "idRightSegueUnwind" {
+                let unwindSegue = LeftToRightSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+                    
+                })
+                return unwindSegue
+            }
         }
         
         return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
