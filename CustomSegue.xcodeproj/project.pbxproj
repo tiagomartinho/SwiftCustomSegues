@@ -20,6 +20,8 @@
 		EA2E5F071AE0484E0065A5C0 /* LinearSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F061AE0484E0065A5C0 /* LinearSegueUnwind.swift */; };
 		EA2E5F091AE049D20065A5C0 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F081AE049D20065A5C0 /* Direction.swift */; };
 		EA2E5F0B1AE051820065A5C0 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F0A1AE051820065A5C0 /* GeneralViewController.swift */; };
+		EA2E5F0D1AE053980065A5C0 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F0C1AE053980065A5C0 /* TopViewController.swift */; };
+		EA2E5F0F1AE053A50065A5C0 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F0E1AE053A50065A5C0 /* BottomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		EA2E5F061AE0484E0065A5C0 /* LinearSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearSegueUnwind.swift; sourceTree = "<group>"; };
 		EA2E5F081AE049D20065A5C0 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		EA2E5F0A1AE051820065A5C0 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		EA2E5F0C1AE053980065A5C0 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		EA2E5F0E1AE053A50065A5C0 /* BottomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */,
 				EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */,
 				EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */,
+				EA2E5F0C1AE053980065A5C0 /* TopViewController.swift */,
+				EA2E5F0E1AE053A50065A5C0 /* BottomViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -253,6 +259,8 @@
 				EA0FDC101ADFEE2500EAA9F0 /* LeftViewController.swift in Sources */,
 				EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */,
 				EA2E5F051AE048340065A5C0 /* LinearSegue.swift in Sources */,
+				EA2E5F0D1AE053980065A5C0 /* TopViewController.swift in Sources */,
+				EA2E5F0F1AE053A50065A5C0 /* BottomViewController.swift in Sources */,
 				EA0FDBF21ADFEDE700EAA9F0 /* MainViewController.swift in Sources */,
 				EA2E5F071AE0484E0065A5C0 /* LinearSegueUnwind.swift in Sources */,
 				EA2E5F0B1AE051820065A5C0 /* GeneralViewController.swift in Sources */,
