@@ -30,22 +30,8 @@ class LinearSegue: UIStoryboardSegue {
         
         // Animate the transition.
         UIView.animateWithDuration(0.5, animations: { () -> Void in
-            
-            switch self.direction {
-            case .LeftToRight:
-                firstVCView.frame = CGRectOffset(firstVCView.frame, screenWidth, 0.0)
-                secondVCView.frame = CGRectOffset(secondVCView.frame, screenWidth, 0.0)
-            case .RightToLeft:
-                firstVCView.frame = CGRectOffset(firstVCView.frame, -screenWidth, 0.0)
-                secondVCView.frame = CGRectOffset(secondVCView.frame, -screenWidth, 0.0)
-            case .BottomToTop:
-                firstVCView.frame = CGRectOffset(firstVCView.frame, 0.0, -screenHeight)
-                secondVCView.frame = CGRectOffset(secondVCView.frame, 0.0, -screenHeight)            case .TopToBottom:
-                    firstVCView.frame = CGRectOffset(firstVCView.frame, 0.0, screenHeight)
-                    secondVCView.frame = CGRectOffset(secondVCView.frame, 0.0, screenHeight)
-            }
-            
-            
+            firstVCView.frame = CGRectOffset(firstVCView.frame, -self.direction.x()*screenWidth, -self.direction.y()*screenHeight)
+            secondVCView.frame = CGRectOffset(secondVCView.frame, -self.direction.x()*screenWidth, -self.direction.y()*screenHeight)
             }, completion: { (Finished) -> Void in
                 self.sourceViewController.presentViewController((self.destinationViewController as! UIViewController) as UIViewController,
                     animated: false,

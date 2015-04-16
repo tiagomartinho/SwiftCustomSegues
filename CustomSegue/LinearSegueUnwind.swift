@@ -22,16 +22,7 @@ class LinearSegueUnwind: UIStoryboardSegue {
         let screenHeight = UIScreen.mainScreen().bounds.size.height
         
         // Specify the initial position of the destination view.
-        switch direction {
-        case .LeftToRight:
-            secondVCView.frame = CGRectMake(-screenWidth, 0.0, screenWidth, screenHeight)
-        case .RightToLeft:
-            secondVCView.frame = CGRectMake(screenWidth, 0.0, screenWidth, screenHeight)
-        case .BottomToTop:
-            secondVCView.frame = CGRectMake(0.0, screenHeight, screenWidth, screenHeight)
-        case .TopToBottom:
-            secondVCView.frame = CGRectMake(0.0, -screenHeight, screenWidth, screenHeight)
-        }
+        secondVCView.frame = CGRectMake(direction.x()*screenWidth, direction.y()*screenHeight, screenWidth, screenHeight)
         
         // Access the app's key window and insert the destination view above the current (source) one.
         let window = UIApplication.sharedApplication().keyWindow
@@ -39,19 +30,8 @@ class LinearSegueUnwind: UIStoryboardSegue {
         
         // Animate the transition.
         UIView.animateWithDuration(0.5, animations: { () -> Void in
-            switch self.direction {
-            case .LeftToRight:
-                firstVCView.frame = CGRectOffset(firstVCView.frame, screenWidth, 0.0)
-                secondVCView.frame = CGRectOffset(secondVCView.frame, screenWidth, 0.0)
-            case .RightToLeft:
-                firstVCView.frame = CGRectOffset(firstVCView.frame, -screenWidth, 0.0)
-                secondVCView.frame = CGRectOffset(secondVCView.frame, -screenWidth, 0.0)
-            case .BottomToTop:
-                firstVCView.frame = CGRectOffset(firstVCView.frame, 0.0, -screenHeight)
-                secondVCView.frame = CGRectOffset(secondVCView.frame, 0.0, -screenHeight)            case .TopToBottom:
-                    firstVCView.frame = CGRectOffset(firstVCView.frame, 0.0, screenHeight)
-                    secondVCView.frame = CGRectOffset(secondVCView.frame, 0.0, screenHeight)
-            }
+            firstVCView.frame = CGRectOffset(firstVCView.frame, -self.direction.x()*screenWidth, -self.direction.y()*screenHeight)
+            secondVCView.frame = CGRectOffset(secondVCView.frame, -self.direction.x()*screenWidth, -self.direction.y()*screenHeight)
             }, completion: { (Finished) -> Void in
                 self.sourceViewController.dismissViewControllerAnimated(false, completion: nil)
         })
