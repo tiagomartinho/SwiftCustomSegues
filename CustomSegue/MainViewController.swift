@@ -10,5 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController
 {
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) { }
 }
 
