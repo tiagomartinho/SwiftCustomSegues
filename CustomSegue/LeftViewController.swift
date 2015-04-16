@@ -25,8 +25,8 @@ class LeftViewController: UIViewController
     }
     
     @IBAction func pushViewController(sender: UIBarButtonItem) {
-        if let rightViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RightViewController") as? RightViewController {
-            self.navigationController?.pushViewController(rightViewController, animated: true)
+        if let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("UIViewController") as? UIViewController {
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }

@@ -447,6 +447,7 @@
 				EA0FDC0B1ADFEDE800EAA9F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA0FDC0C1ADFEDE800EAA9F0 /* Build configuration list for PBXNativeTarget "CustomSegueTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +456,7 @@
 				EA0FDC0E1ADFEDE800EAA9F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
