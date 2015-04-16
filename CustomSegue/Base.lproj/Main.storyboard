@@ -91,7 +91,19 @@
                     <view key="view" contentMode="scaleToFill" id="Cx2-PQ-s64">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbs-75-7gH">
+                                <rect key="frame" x="283" y="290" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.5490196078431373" blue="0.41960784313725491" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Sbs-75-7gH" secondAttribute="centerX" id="8Sd-ka-3lV"/>
+                            <constraint firstAttribute="centerY" secondItem="Sbs-75-7gH" secondAttribute="centerY" id="KPc-2o-4Oj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9W3-KW-n0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,8 +148,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="fVQ-xO-gq0" kind="custom" identifier="idRightSegue" customClass="HorizontalSegue" customModule="CustomSegue" customModuleProvider="target" id="qnH-Bf-jzH"/>
-                        <segue destination="8vx-hf-eLo" kind="custom" identifier="idLeftSegue" customClass="HorizontalSegue" customModule="CustomSegue" id="738-pq-CEj"/>
+                        <segue destination="fVQ-xO-gq0" kind="custom" identifier="idRightSegue" customClass="LinearSegue" customModule="CustomSegue" customModuleProvider="target" id="qnH-Bf-jzH"/>
+                        <segue destination="8vx-hf-eLo" kind="custom" identifier="idLeftSegue" customClass="LinearSegue" customModule="CustomSegue" id="738-pq-CEj"/>
+                        <segue destination="KZ2-8K-zao" kind="custom" identifier="idTopSegue" customClass="LinearSegue" customModule="CustomSegue" customModuleProvider="target" id="BKu-O6-Kg5"/>
+                        <segue destination="iM6-Bx-1dD" kind="custom" identifier="idBottomSegue" customClass="LinearSegue" customModule="CustomSegue" customModuleProvider="target" id="25v-c3-CG1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -225,7 +239,19 @@
                     <view key="view" contentMode="scaleToFill" id="9HZ-1m-Ckq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.69929392459999995" green="0.52143896999999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7k-BK-6Gq">
+                                <rect key="frame" x="264" y="290" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.39215686274509803" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="e7k-BK-6Gq" secondAttribute="centerX" id="IPH-ST-pyc"/>
+                            <constraint firstAttribute="centerY" secondItem="e7k-BK-6Gq" secondAttribute="centerY" id="beq-aq-3xa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSo-B4-f99" userLabel="First Responder" sceneMemberID="firstResponder"/>

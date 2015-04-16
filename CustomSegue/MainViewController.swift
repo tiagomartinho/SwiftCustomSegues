@@ -12,12 +12,18 @@ class MainViewController: UIViewController
 {
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSwipeRightGestureRecognizer()
-        addSwipeLeftGestureRecognizer()
+        addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Right,action:"showLeftViewController")
+        addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Left,action:"showRightViewController")
+    }
+    
+    private func addSwipeGestureRecognizer(direction:UISwipeGestureRecognizerDirection,action:Selector){
+        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: action)
+        swipeGestureRecognizer.direction = direction
+        self.view.addGestureRecognizer(swipeGestureRecognizer)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let customSegue = segue as? HorizontalSegue {
+        if let customSegue = segue as? LinearSegue {
             if let id = customSegue.identifier {
                 if id == "idRightSegue" {
                     customSegue.direction = Direction.RightToLeft
@@ -29,24 +35,12 @@ class MainViewController: UIViewController
         }
     }
     
-    private func addSwipeRightGestureRecognizer(){
-        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showLeftViewController")
-        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(swipeGestureRecognizer)
-    }
-    
     @IBAction func showLeftViewController(sender: UIBarButtonItem) {
         showLeftViewController()
     }
     
     func showLeftViewController() {
         self.performSegueWithIdentifier("idLeftSegue", sender: self)
-    }
-    
-    private func addSwipeLeftGestureRecognizer(){
-        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showRightViewController")
-        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Left
-        self.view.addGestureRecognizer(swipeGestureRecognizer)
     }
     
     @IBAction func showRightViewController(sender: UIBarButtonItem) {
