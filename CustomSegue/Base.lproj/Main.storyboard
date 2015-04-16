@@ -30,9 +30,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FDP-Bk-Ywz">
-                        <barButtonItem key="rightBarButtonItem" title="Push View Controller" id="QVJ-cf-rR5">
+                        <barButtonItem key="leftBarButtonItem" title="Push View Controller" id="QVJ-cf-rR5">
                             <connections>
                                 <action selector="pushViewController:" destination="hS0-2a-IyP" id="YdS-nj-Gwe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Main" id="ZVF-Sw-M2K">
+                            <connections>
+                                <action selector="showMainViewController:" destination="hS0-2a-IyP" id="MnD-jB-0KK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -70,7 +75,14 @@
                             <constraint firstAttribute="centerX" secondItem="Y0K-by-07m" secondAttribute="centerX" id="WHD-Dl-U2N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1LG-i2-CDF"/>
+                    <navigationItem key="navigationItem" id="1LG-i2-CDF">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="Hod-Pk-Qno">
+                            <connections>
+                                <action selector="showLeftViewController:" destination="BYZ-38-t0r" id="axS-si-wRo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Right" id="sWc-Z1-spT"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="fVQ-xO-gq0" kind="custom" id="qnH-Bf-jzH"/>
                         <segue destination="8vx-hf-eLo" kind="custom" identifier="idLeftSegue" customClass="LeftToRightSegue" customModule="CustomSegue" id="738-pq-CEj"/>

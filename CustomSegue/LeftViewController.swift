@@ -17,6 +17,9 @@ class LeftViewController: UIViewController
         self.view.addGestureRecognizer(swipeGestureRecognizer)
     }
     
+    @IBAction func showMainViewController(sender: AnyObject) {
+        showMainViewController()
+    }
     func showMainViewController() {
         self.performSegueWithIdentifier("idLeftSegueUnwind", sender: self)
     }

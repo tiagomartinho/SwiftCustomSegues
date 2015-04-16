@@ -17,8 +17,12 @@ class MainViewController: UIViewController
         self.view.addGestureRecognizer(swipeGestureRecognizer)
     }
     
+    @IBAction func showLeftViewController(sender: UIBarButtonItem) {
+        showLeftViewController()
+    }
+    
     func showLeftViewController() {
         self.performSegueWithIdentifier("idLeftSegue", sender: self)
-    }    
+    }
 }
 
