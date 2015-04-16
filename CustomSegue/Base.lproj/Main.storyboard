@@ -7,7 +7,7 @@
         <!--Left View Controller-->
         <scene sceneID="szs-gq-eLE">
             <objects>
-                <viewController id="hS0-2a-IyP" customClass="LeftViewController" customModule="CustomSegue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftViewController" id="hS0-2a-IyP" customClass="LeftViewController" customModule="CustomSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C9P-n1-MLy"/>
                         <viewControllerLayoutGuide type="bottom" id="daa-yX-Tav"/>
@@ -29,7 +29,13 @@
                             <constraint firstAttribute="centerX" secondItem="SIB-06-YVH" secondAttribute="centerX" id="sr5-dY-2iW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FDP-Bk-Ywz"/>
+                    <navigationItem key="navigationItem" id="FDP-Bk-Ywz">
+                        <barButtonItem key="rightBarButtonItem" title="Push View Controller" id="QVJ-cf-rR5">
+                            <connections>
+                                <action selector="pushViewController:" destination="hS0-2a-IyP" id="YdS-nj-Gwe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Ru4-FX-EWQ" kind="unwind" identifier="idLeftSegueUnwind" unwindAction="unwindSegue:" id="fmL-3W-Fm0"/>
                     </connections>
@@ -42,7 +48,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CustomSegue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="CustomSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -77,7 +83,7 @@
         <!--Right View Controller-->
         <scene sceneID="S2Z-Th-I6I">
             <objects>
-                <viewController id="fVQ-xO-gq0" customClass="RightViewController" customModule="CustomSegue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RightViewController" id="fVQ-xO-gq0" customClass="RightViewController" customModule="CustomSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hOM-QT-gBt"/>
                         <viewControllerLayoutGuide type="bottom" id="Fmm-tF-OwC"/>

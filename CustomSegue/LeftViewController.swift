@@ -20,4 +20,10 @@ class LeftViewController: UIViewController
     func showMainViewController() {
         self.performSegueWithIdentifier("idLeftSegueUnwind", sender: self)
     }
+    
+    @IBAction func pushViewController(sender: UIBarButtonItem) {
+        if let rightViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RightViewController") as? RightViewController {
+            self.navigationController?.pushViewController(rightViewController, animated: true)
+        }
+    }
 }
