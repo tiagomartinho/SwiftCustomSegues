@@ -22,16 +22,7 @@ class LinearSegue: UIStoryboardSegue {
         let screenHeight = UIScreen.mainScreen().bounds.size.height
         
         // Specify the initial position of the destination view.
-        switch direction {
-        case .LeftToRight:
-            secondVCView.frame = CGRectMake(-screenWidth, 0.0, screenWidth, screenHeight)
-        case .RightToLeft:
-            secondVCView.frame = CGRectMake(screenWidth, 0.0, screenWidth, screenHeight)
-        case .BottomToTop:
-            secondVCView.frame = CGRectMake(0.0, screenHeight, screenWidth, screenHeight)
-        case .TopToBottom:
-            secondVCView.frame = CGRectMake(0.0, -screenHeight, screenWidth, screenHeight)
-        }
+        secondVCView.frame = CGRectMake(direction.x()*screenWidth, direction.y()*screenHeight, screenWidth, screenHeight)
         
         // Access the app's key window and insert the destination view above the current (source) one.
         let window = UIApplication.sharedApplication().keyWindow
