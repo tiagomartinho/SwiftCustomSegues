@@ -12,6 +12,11 @@ class MainViewController: UIViewController
 {
     override func viewDidLoad() {
         super.viewDidLoad()
+        addSwipeRightGestureRecognizer()
+        addSwipeLeftGestureRecognizer()
+    }
+    
+    private func addSwipeRightGestureRecognizer(){
         var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showLeftViewController")
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeGestureRecognizer)
@@ -23,6 +28,20 @@ class MainViewController: UIViewController
     
     func showLeftViewController() {
         self.performSegueWithIdentifier("idLeftSegue", sender: self)
+    }
+    
+    private func addSwipeLeftGestureRecognizer(){
+        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showRightViewController")
+        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeGestureRecognizer)
+    }
+    
+    @IBAction func showRightViewController(sender: UIBarButtonItem) {
+        showRightViewController()
+    }
+    
+    func showRightViewController() {
+        self.performSegueWithIdentifier("idRightSegue", sender: self)
     }
 }
 

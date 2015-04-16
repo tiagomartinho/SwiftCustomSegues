@@ -111,10 +111,14 @@
                                 <action selector="showLeftViewController:" destination="BYZ-38-t0r" id="axS-si-wRo"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Right" id="sWc-Z1-spT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Right" id="sWc-Z1-spT">
+                            <connections>
+                                <action selector="showRightViewController:" destination="BYZ-38-t0r" id="UjA-Xd-9ei"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="fVQ-xO-gq0" kind="custom" id="qnH-Bf-jzH"/>
+                        <segue destination="fVQ-xO-gq0" kind="custom" identifier="idRightSegue" customClass="LeftToRightSegue" customModule="CustomSegue" customModuleProvider="target" id="qnH-Bf-jzH"/>
                         <segue destination="8vx-hf-eLo" kind="custom" identifier="idLeftSegue" customClass="LeftToRightSegue" customModule="CustomSegue" id="738-pq-CEj"/>
                     </connections>
                 </viewController>
