@@ -24,9 +24,9 @@ class LinearSegueUnwind: UIStoryboardSegue {
         // Specify the initial position of the destination view.
         switch direction {
         case .LeftToRight:
-            secondVCView.frame = CGRectMake(screenWidth, 0.0, screenWidth, screenHeight)
-        case .RightToLeft:
             secondVCView.frame = CGRectMake(-screenWidth, 0.0, screenWidth, screenHeight)
+        case .RightToLeft:
+            secondVCView.frame = CGRectMake(screenWidth, 0.0, screenWidth, screenHeight)
         case .BottomToTop:
             secondVCView.frame = CGRectMake(0.0, screenHeight, screenWidth, screenHeight)
         case .TopToBottom:
@@ -41,11 +41,11 @@ class LinearSegueUnwind: UIStoryboardSegue {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             switch self.direction {
             case .LeftToRight:
-                firstVCView.frame = CGRectOffset(firstVCView.frame, -screenWidth, 0.0)
-                secondVCView.frame = CGRectOffset(secondVCView.frame, -screenWidth, 0.0)
-            case .RightToLeft:
                 firstVCView.frame = CGRectOffset(firstVCView.frame, screenWidth, 0.0)
                 secondVCView.frame = CGRectOffset(secondVCView.frame, screenWidth, 0.0)
+            case .RightToLeft:
+                firstVCView.frame = CGRectOffset(firstVCView.frame, -screenWidth, 0.0)
+                secondVCView.frame = CGRectOffset(secondVCView.frame, -screenWidth, 0.0)
             case .BottomToTop:
                 firstVCView.frame = CGRectOffset(firstVCView.frame, 0.0, -screenHeight)
                 secondVCView.frame = CGRectOffset(secondVCView.frame, 0.0, -screenHeight)            case .TopToBottom:

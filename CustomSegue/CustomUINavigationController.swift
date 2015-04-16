@@ -14,20 +14,22 @@ class CustomUINavigationController:UINavigationController {
     
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
         if let id = identifier{
-            if id == "idLeftSegueUnwind" {
-                let unwindSegue = LinearSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
-                    
-                })
-                unwindSegue.direction = Direction.LeftToRight
-                return unwindSegue
-            }
-            if id == "idRightSegueUnwind" {
-                let unwindSegue = LinearSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
-                    
-                })
+            let unwindSegue = LinearSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+                
+            })
+            switch id {
+            case "idLeftSegueUnwind":
                 unwindSegue.direction = Direction.RightToLeft
                 return unwindSegue
+            case "idRightSegueUnwind":
+                unwindSegue.direction = Direction.LeftToRight
+            case "idBottomSegueUnwind":
+                unwindSegue.direction = Direction.TopToBottom
+            case "idTopSegueUnwind":
+                unwindSegue.direction = Direction.BottomToTop
+            default: break
             }
+            return unwindSegue
         }
         
         return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)

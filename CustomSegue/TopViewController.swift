@@ -6,4 +6,16 @@
 //  Copyright (c) 2015 Martinho. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TopViewController: GeneralViewController
+{
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Up,action:"showMainViewController")
+    }
+    
+    func showMainViewController() {
+        self.performSegueWithIdentifier("idTopSegueUnwind", sender: self)
+    }
+}
