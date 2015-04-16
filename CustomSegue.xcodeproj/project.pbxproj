@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EA0FDBF01ADFEDE700EAA9F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDBEF1ADFEDE700EAA9F0 /* AppDelegate.swift */; };
-		EA0FDBF21ADFEDE700EAA9F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDBF11ADFEDE700EAA9F0 /* ViewController.swift */; };
+		EA0FDBF21ADFEDE700EAA9F0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDBF11ADFEDE700EAA9F0 /* MainViewController.swift */; };
 		EA0FDBF51ADFEDE700EAA9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0FDBF31ADFEDE700EAA9F0 /* Main.storyboard */; };
 		EA0FDBF71ADFEDE700EAA9F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0FDBF61ADFEDE700EAA9F0 /* Images.xcassets */; };
 		EA0FDBFA1ADFEDE700EAA9F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0FDBF81ADFEDE700EAA9F0 /* LaunchScreen.xib */; };
 		EA0FDC061ADFEDE800EAA9F0 /* CustomSegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC051ADFEDE800EAA9F0 /* CustomSegueTests.swift */; };
+		EA0FDC101ADFEE2500EAA9F0 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */; };
+		EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		EA0FDBEA1ADFEDE700EAA9F0 /* CustomSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0FDBEE1ADFEDE700EAA9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA0FDBEF1ADFEDE700EAA9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA0FDBF11ADFEDE700EAA9F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA0FDBF11ADFEDE700EAA9F0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA0FDBF41ADFEDE700EAA9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA0FDBF61ADFEDE700EAA9F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA0FDBF91ADFEDE700EAA9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EA0FDBFF1ADFEDE800EAA9F0 /* CustomSegueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSegueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0FDC041ADFEDE800EAA9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA0FDC051ADFEDE800EAA9F0 /* CustomSegueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegueTests.swift; sourceTree = "<group>"; };
+		EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,10 @@
 		EA0FDBEC1ADFEDE700EAA9F0 /* CustomSegue */ = {
 			isa = PBXGroup;
 			children = (
-				EA0FDBEF1ADFEDE700EAA9F0 /* AppDelegate.swift */,
-				EA0FDBF11ADFEDE700EAA9F0 /* ViewController.swift */,
 				EA0FDBF31ADFEDE700EAA9F0 /* Main.storyboard */,
-				EA0FDBF61ADFEDE700EAA9F0 /* Images.xcassets */,
-				EA0FDBF81ADFEDE700EAA9F0 /* LaunchScreen.xib */,
+				EA0FDBF11ADFEDE700EAA9F0 /* MainViewController.swift */,
+				EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */,
+				EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */,
 				EA0FDBED1ADFEDE700EAA9F0 /* Supporting Files */,
 			);
 			path = CustomSegue;
@@ -90,6 +93,9 @@
 		EA0FDBED1ADFEDE700EAA9F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA0FDBEF1ADFEDE700EAA9F0 /* AppDelegate.swift */,
+				EA0FDBF61ADFEDE700EAA9F0 /* Images.xcassets */,
+				EA0FDBF81ADFEDE700EAA9F0 /* LaunchScreen.xib */,
 				EA0FDBEE1ADFEDE700EAA9F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0FDBF21ADFEDE700EAA9F0 /* ViewController.swift in Sources */,
+				EA0FDC101ADFEE2500EAA9F0 /* LeftViewController.swift in Sources */,
+				EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */,
+				EA0FDBF21ADFEDE700EAA9F0 /* MainViewController.swift in Sources */,
 				EA0FDBF01ADFEDE700EAA9F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
