@@ -8,13 +8,11 @@
 
 import UIKit
 
-class RightViewController: UIViewController
+class RightViewController: GeneralViewController
 {
     override func viewDidLoad() {
         super.viewDidLoad()
-        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showMainViewController")
-        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(swipeGestureRecognizer)
+        addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Right,action:"showMainViewController")
     }
 
     func showMainViewController() {

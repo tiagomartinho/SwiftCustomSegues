@@ -19,6 +19,7 @@
 		EA2E5F051AE048340065A5C0 /* LinearSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F041AE048340065A5C0 /* LinearSegue.swift */; };
 		EA2E5F071AE0484E0065A5C0 /* LinearSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F061AE0484E0065A5C0 /* LinearSegueUnwind.swift */; };
 		EA2E5F091AE049D20065A5C0 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F081AE049D20065A5C0 /* Direction.swift */; };
+		EA2E5F0B1AE051820065A5C0 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F0A1AE051820065A5C0 /* GeneralViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		EA2E5F041AE048340065A5C0 /* LinearSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearSegue.swift; sourceTree = "<group>"; };
 		EA2E5F061AE0484E0065A5C0 /* LinearSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearSegueUnwind.swift; sourceTree = "<group>"; };
 		EA2E5F081AE049D20065A5C0 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		EA2E5F0A1AE051820065A5C0 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		EA0FDC171ADFF5D800EAA9F0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EA2E5F0A1AE051820065A5C0 /* GeneralViewController.swift */,
 				EA0FDBF11ADFEDE700EAA9F0 /* MainViewController.swift */,
 				EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */,
 				EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */,
@@ -252,6 +255,7 @@
 				EA2E5F051AE048340065A5C0 /* LinearSegue.swift in Sources */,
 				EA0FDBF21ADFEDE700EAA9F0 /* MainViewController.swift in Sources */,
 				EA2E5F071AE0484E0065A5C0 /* LinearSegueUnwind.swift in Sources */,
+				EA2E5F0B1AE051820065A5C0 /* GeneralViewController.swift in Sources */,
 				EA0FDBF01ADFEDE700EAA9F0 /* AppDelegate.swift in Sources */,
 				EA2E5F091AE049D20065A5C0 /* Direction.swift in Sources */,
 			);

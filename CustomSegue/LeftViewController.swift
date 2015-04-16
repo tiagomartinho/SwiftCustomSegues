@@ -8,13 +8,11 @@
 
 import UIKit
 
-class LeftViewController: UIViewController
+class LeftViewController: GeneralViewController
 {
     override func viewDidLoad() {
         super.viewDidLoad()
-        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showMainViewController")
-        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Left
-        self.view.addGestureRecognizer(swipeGestureRecognizer)
+        addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Left,action:"showMainViewController")
     }
     
     @IBAction func showMainViewController(sender: AnyObject) {

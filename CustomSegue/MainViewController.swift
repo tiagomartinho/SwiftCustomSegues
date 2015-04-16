@@ -8,18 +8,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController
+class MainViewController: GeneralViewController
 {
     override func viewDidLoad() {
         super.viewDidLoad()
         addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Right,action:"showLeftViewController")
         addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Left,action:"showRightViewController")
-    }
-    
-    private func addSwipeGestureRecognizer(direction:UISwipeGestureRecognizerDirection,action:Selector){
-        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: action)
-        swipeGestureRecognizer.direction = direction
-        self.view.addGestureRecognizer(swipeGestureRecognizer)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
