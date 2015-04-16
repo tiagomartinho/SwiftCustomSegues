@@ -29,6 +29,7 @@
                             <constraint firstAttribute="centerX" secondItem="SIB-06-YVH" secondAttribute="centerX" id="sr5-dY-2iW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FDP-Bk-Ywz"/>
                     <connections>
                         <segue destination="Ru4-FX-EWQ" kind="unwind" identifier="idLeftSegueUnwind" unwindAction="unwindSegue:" id="fmL-3W-Fm0"/>
                     </connections>
@@ -36,7 +37,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3G-7W-5MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Ru4-FX-EWQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="242" y="1175"/>
+            <point key="canvasLocation" x="242" y="1915"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -66,7 +67,7 @@
                     <navigationItem key="navigationItem" id="1LG-i2-CDF"/>
                     <connections>
                         <segue destination="fVQ-xO-gq0" kind="custom" id="qnH-Bf-jzH"/>
-                        <segue destination="hS0-2a-IyP" kind="custom" identifier="idLeftSegue" customClass="LeftToRightSegue" customModule="CustomSegue" customModuleProvider="target" id="738-pq-CEj"/>
+                        <segue destination="8vx-hf-eLo" kind="custom" identifier="idLeftSegue" customClass="LeftToRightSegue" customModule="CustomSegue" id="738-pq-CEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,7 +106,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4W-CL-d80" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="lL4-7g-U2V" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1157" y="1175"/>
+            <point key="canvasLocation" x="961" y="1175"/>
         </scene>
         <!--CustomUI Navigation Controller-->
         <scene sceneID="pIp-MZ-c75">
@@ -124,6 +125,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLX-Pj-mpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-121" y="359"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uuI-SW-i2T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8vx-hf-eLo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MyF-5u-rnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hS0-2a-IyP" kind="relationship" relationship="rootViewController" id="Ifd-Z5-Zhg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQh-cv-cfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="1175"/>
         </scene>
     </scenes>
 </document>
