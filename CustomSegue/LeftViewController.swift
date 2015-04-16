@@ -10,4 +10,14 @@ import UIKit
 
 class LeftViewController: UIViewController
 {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showMainViewController")
+        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeGestureRecognizer)
+    }
+    
+    func showMainViewController() {
+        self.performSegueWithIdentifier("idLeftSegueUnwind", sender: self)
+    }
 }

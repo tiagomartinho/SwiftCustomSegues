@@ -10,8 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController
 {
-    @IBAction func unwindSegue(segue: UIStoryboardSegue) { }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showLeftViewController")
@@ -21,6 +19,22 @@ class MainViewController: UIViewController
     
     func showLeftViewController() {
         self.performSegueWithIdentifier("idLeftSegue", sender: self)
+    }
+    
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) { }
+    
+    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+        
+        if let id = identifier{
+            if id == "idLeftSegueUnwind" {
+                let unwindSegue = LeftToRightSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+                    
+                })
+                return unwindSegue
+            }
+        }
+        
+        return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
     }
 }
 

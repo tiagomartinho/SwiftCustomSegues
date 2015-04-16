@@ -18,7 +18,7 @@
                         <color key="backgroundColor" red="0.17254901959999999" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <segue destination="Ru4-FX-EWQ" kind="unwind" unwindAction="unwindSegue:" id="fmL-3W-Fm0"/>
+                        <segue destination="Ru4-FX-EWQ" kind="unwind" identifier="idLeftSegueUnwind" unwindAction="unwindSegue:" id="fmL-3W-Fm0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3G-7W-5MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
