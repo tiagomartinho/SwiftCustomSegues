@@ -15,15 +15,17 @@ class CustomUINavigationController:UINavigationController {
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
         if let id = identifier{
             if id == "idLeftSegueUnwind" {
-                let unwindSegue = LeftToRightSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+                let unwindSegue = HorizontalSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
                     
                 })
+                unwindSegue.direction = Direction.LeftToRight
                 return unwindSegue
             }
             if id == "idRightSegueUnwind" {
-                let unwindSegue = RightToLeftSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
+                let unwindSegue = HorizontalSegueUnwind(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
                     
                 })
+                unwindSegue.direction = Direction.RightToLeft
                 return unwindSegue
             }
         }

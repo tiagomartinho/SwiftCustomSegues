@@ -16,6 +16,19 @@ class MainViewController: UIViewController
         addSwipeLeftGestureRecognizer()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let customSegue = segue as? HorizontalSegue {
+            if let id = customSegue.identifier {
+                if id == "idRightSegue" {
+                    customSegue.direction = Direction.RightToLeft
+                }
+                if id == "idLeftSegue" {
+                    customSegue.direction = Direction.LeftToRight
+                }
+            }
+        }
+    }
+    
     private func addSwipeRightGestureRecognizer(){
         var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showLeftViewController")
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Right

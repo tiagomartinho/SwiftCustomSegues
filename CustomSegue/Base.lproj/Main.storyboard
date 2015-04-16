@@ -118,8 +118,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="fVQ-xO-gq0" kind="custom" identifier="idRightSegue" customClass="RightToLeftSegue" customModule="CustomSegue" customModuleProvider="target" id="qnH-Bf-jzH"/>
-                        <segue destination="8vx-hf-eLo" kind="custom" identifier="idLeftSegue" customClass="LeftToRightSegue" customModule="CustomSegue" id="738-pq-CEj"/>
+                        <segue destination="fVQ-xO-gq0" kind="custom" identifier="idRightSegue" customClass="HorizontalSegue" customModule="CustomSegue" customModuleProvider="target" id="qnH-Bf-jzH"/>
+                        <segue destination="8vx-hf-eLo" kind="custom" identifier="idLeftSegue" customClass="HorizontalSegue" customModule="CustomSegue" id="738-pq-CEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
