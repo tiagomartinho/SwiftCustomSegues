@@ -17,6 +17,7 @@
 		EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */; };
 		EA0FDC141ADFF10500EAA9F0 /* LeftToRightSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */; };
 		EA0FDC161ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC151ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift */; };
+		EA0FDC1A1AE0022A00EAA9F0 /* CustomUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegue.swift; sourceTree = "<group>"; };
 		EA0FDC151ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegueUnwind.swift; sourceTree = "<group>"; };
+		EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				EA0FDBF31ADFEDE700EAA9F0 /* Main.storyboard */,
-				EA0FDBF11ADFEDE700EAA9F0 /* MainViewController.swift */,
-				EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */,
-				EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */,
+				EA0FDC171ADFF5D800EAA9F0 /* View Controllers */,
+				EA0FDC181ADFF5F200EAA9F0 /* Segues */,
 				EA0FDBED1ADFEDE700EAA9F0 /* Supporting Files */,
-				EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */,
-				EA0FDC151ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift */,
 			);
 			path = CustomSegue;
 			sourceTree = "<group>";
@@ -122,6 +121,26 @@
 				EA0FDC041ADFEDE800EAA9F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA0FDC171ADFF5D800EAA9F0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA0FDBF11ADFEDE700EAA9F0 /* MainViewController.swift */,
+				EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */,
+				EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */,
+				EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EA0FDC181ADFF5F200EAA9F0 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */,
+				EA0FDC151ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift */,
+			);
+			name = Segues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0FDC1A1AE0022A00EAA9F0 /* CustomUINavigationController.swift in Sources */,
 				EA0FDC101ADFEE2500EAA9F0 /* LeftViewController.swift in Sources */,
 				EA0FDC161ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift in Sources */,
 				EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */,
