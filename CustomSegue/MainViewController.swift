@@ -18,6 +18,22 @@ class MainViewController: GeneralViewController
         addSwipeGestureRecognizer(UISwipeGestureRecognizerDirection.Up,action:"showBottomViewController")
     }
     
+    func showLeftViewController() {
+        self.performSegueWithIdentifier("idLeftSegue", sender: self)
+    }
+    
+    func showRightViewController() {
+        self.performSegueWithIdentifier("idRightSegue", sender: self)
+    }
+    
+    func showBottomViewController() {
+        self.performSegueWithIdentifier("idBottomSegue", sender: self)
+    }
+    
+    func showTopViewController() {
+        self.performSegueWithIdentifier("idTopSegue", sender: self)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let customSegue = segue as? LinearSegue {
             if let identifier = customSegue.identifier {
@@ -42,22 +58,6 @@ class MainViewController: GeneralViewController
     
     @IBAction func showRightViewController(sender: UIBarButtonItem) {
         showRightViewController()
-    }
-    
-    func showLeftViewController() {
-        self.performSegueWithIdentifier("idLeftSegue", sender: self)
-    }
-    
-    func showRightViewController() {
-        self.performSegueWithIdentifier("idRightSegue", sender: self)
-    }
-    
-    func showBottomViewController() {
-        self.performSegueWithIdentifier("idBottomSegue", sender: self)
-    }
-    
-    func showTopViewController() {
-        self.performSegueWithIdentifier("idTopSegue", sender: self)
     }
 }
 

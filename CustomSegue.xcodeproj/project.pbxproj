@@ -135,10 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				EA2E5F0A1AE051820065A5C0 /* GeneralViewController.swift */,
+				EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */,
 				EA0FDBF11ADFEDE700EAA9F0 /* MainViewController.swift */,
 				EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */,
 				EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */,
-				EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */,
 				EA2E5F0C1AE053980065A5C0 /* TopViewController.swift */,
 				EA2E5F0E1AE053A50065A5C0 /* BottomViewController.swift */,
 			);
