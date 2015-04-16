@@ -41,7 +41,7 @@
                     </view>
                     <connections>
                         <segue destination="fVQ-xO-gq0" kind="custom" id="qnH-Bf-jzH"/>
-                        <segue destination="hS0-2a-IyP" kind="custom" id="738-pq-CEj"/>
+                        <segue destination="hS0-2a-IyP" kind="custom" identifier="idLeftSegue" customClass="LeftToRightSegue" customModule="CustomSegue" customModuleProvider="target" id="738-pq-CEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

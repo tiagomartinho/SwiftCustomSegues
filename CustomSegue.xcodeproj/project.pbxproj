@@ -15,6 +15,7 @@
 		EA0FDC061ADFEDE800EAA9F0 /* CustomSegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC051ADFEDE800EAA9F0 /* CustomSegueTests.swift */; };
 		EA0FDC101ADFEE2500EAA9F0 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */; };
 		EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */; };
+		EA0FDC141ADFF10500EAA9F0 /* LeftToRightSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EA0FDC051ADFEDE800EAA9F0 /* CustomSegueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegueTests.swift; sourceTree = "<group>"; };
 		EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				EA0FDC0F1ADFEE2500EAA9F0 /* LeftViewController.swift */,
 				EA0FDC111ADFEE3000EAA9F0 /* RightViewController.swift */,
 				EA0FDBED1ADFEDE700EAA9F0 /* Supporting Files */,
+				EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */,
 			);
 			path = CustomSegue;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				EA0FDC101ADFEE2500EAA9F0 /* LeftViewController.swift in Sources */,
 				EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */,
+				EA0FDC141ADFF10500EAA9F0 /* LeftToRightSegue.swift in Sources */,
 				EA0FDBF21ADFEDE700EAA9F0 /* MainViewController.swift in Sources */,
 				EA0FDBF01ADFEDE700EAA9F0 /* AppDelegate.swift in Sources */,
 			);
