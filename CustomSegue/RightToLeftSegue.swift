@@ -1,5 +1,5 @@
 //
-//  LeftToRightSegue.swift
+//  RightToLeftSegue.swift
 //  CustomSegue
 //
 //  Created by Martinho on 16/04/15.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LeftToRightSegue: UIStoryboardSegue {
- 
+class RightToLeftSegue: UIStoryboardSegue {
+   
     override func perform() {
         // Assign the source and destination views to local variables.
         var firstVCView = self.sourceViewController.view as UIView!
@@ -20,7 +20,7 @@ class LeftToRightSegue: UIStoryboardSegue {
         let screenHeight = UIScreen.mainScreen().bounds.size.height
         
         // Specify the initial position of the destination view.
-        secondVCView.frame = CGRectMake(-screenWidth, 0.0, screenWidth, screenHeight)
+        secondVCView.frame = CGRectMake(screenWidth, 0.0, screenWidth, screenHeight)
         
         // Access the app's key window and insert the destination view above the current (source) one.
         let window = UIApplication.sharedApplication().keyWindow
@@ -28,8 +28,8 @@ class LeftToRightSegue: UIStoryboardSegue {
         
         // Animate the transition.
         UIView.animateWithDuration(0.5, animations: { () -> Void in
-            firstVCView.frame = CGRectOffset(firstVCView.frame, screenWidth, 0.0)
-            secondVCView.frame = CGRectOffset(secondVCView.frame, screenWidth, 0.0)
+            firstVCView.frame = CGRectOffset(firstVCView.frame, -screenWidth, 0.0)
+            secondVCView.frame = CGRectOffset(secondVCView.frame, -screenWidth, 0.0)
             
             }, completion: { (Finished) -> Void in
                 self.sourceViewController.presentViewController((self.destinationViewController as! UIViewController) as UIViewController,

@@ -18,6 +18,8 @@
 		EA0FDC141ADFF10500EAA9F0 /* LeftToRightSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */; };
 		EA0FDC161ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC151ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift */; };
 		EA0FDC1A1AE0022A00EAA9F0 /* CustomUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */; };
+		EA2E5F011AE046D90065A5C0 /* RightToLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F001AE046D90065A5C0 /* RightToLeftSegue.swift */; };
+		EA2E5F031AE046E50065A5C0 /* RightToLeftSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E5F021AE046E50065A5C0 /* RightToLeftSegueUnwind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegue.swift; sourceTree = "<group>"; };
 		EA0FDC151ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftToRightSegueUnwind.swift; sourceTree = "<group>"; };
 		EA0FDC191AE0022A00EAA9F0 /* CustomUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavigationController.swift; sourceTree = "<group>"; };
+		EA2E5F001AE046D90065A5C0 /* RightToLeftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightToLeftSegue.swift; sourceTree = "<group>"; };
+		EA2E5F021AE046E50065A5C0 /* RightToLeftSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightToLeftSegueUnwind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			children = (
 				EA0FDC131ADFF10500EAA9F0 /* LeftToRightSegue.swift */,
 				EA0FDC151ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift */,
+				EA2E5F001AE046D90065A5C0 /* RightToLeftSegue.swift */,
+				EA2E5F021AE046E50065A5C0 /* RightToLeftSegueUnwind.swift */,
 			);
 			name = Segues;
 			sourceTree = "<group>";
@@ -243,12 +249,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2E5F031AE046E50065A5C0 /* RightToLeftSegueUnwind.swift in Sources */,
 				EA0FDC1A1AE0022A00EAA9F0 /* CustomUINavigationController.swift in Sources */,
 				EA0FDC101ADFEE2500EAA9F0 /* LeftViewController.swift in Sources */,
 				EA0FDC161ADFF24C00EAA9F0 /* LeftToRightSegueUnwind.swift in Sources */,
 				EA0FDC121ADFEE3000EAA9F0 /* RightViewController.swift in Sources */,
 				EA0FDC141ADFF10500EAA9F0 /* LeftToRightSegue.swift in Sources */,
 				EA0FDBF21ADFEDE700EAA9F0 /* MainViewController.swift in Sources */,
+				EA2E5F011AE046D90065A5C0 /* RightToLeftSegue.swift in Sources */,
 				EA0FDBF01ADFEDE700EAA9F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

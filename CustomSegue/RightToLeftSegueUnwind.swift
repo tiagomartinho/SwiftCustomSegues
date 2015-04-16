@@ -1,5 +1,5 @@
 //
-//  LeftToRightSegue.swift
+//  RightToLeftSegueUnwind.swift
 //  CustomSegue
 //
 //  Created by Martinho on 16/04/15.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LeftToRightSegue: UIStoryboardSegue {
- 
+class RightToLeftSegueUnwind: UIStoryboardSegue {
+    
     override func perform() {
         // Assign the source and destination views to local variables.
         var firstVCView = self.sourceViewController.view as UIView!
@@ -32,9 +32,7 @@ class LeftToRightSegue: UIStoryboardSegue {
             secondVCView.frame = CGRectOffset(secondVCView.frame, screenWidth, 0.0)
             
             }, completion: { (Finished) -> Void in
-                self.sourceViewController.presentViewController((self.destinationViewController as! UIViewController) as UIViewController,
-                    animated: false,
-                    completion: nil)
+                self.sourceViewController.dismissViewControllerAnimated(false, completion: nil)
         })
     }
 }
